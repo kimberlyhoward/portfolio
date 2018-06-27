@@ -8,11 +8,7 @@
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
-    background: -webkit-linear-gradient(top, white, black);
-    background: -o-linear-gradient(top, white, black);
-    background: linear-gradient(to bottom, white, black);
-}/*==================================
+ }/*==================================
     Template Name: AboutMe | Personal Portfolio Template;
     Template Url: http://www.propertheme.com/html/about-me_preview;
     Template Author: ProperTheme;
@@ -65,6 +61,7 @@ html {
 img {
     max-width: 100%; 
     height: auto;
+    
 }
 ul{
     margin: 0;
@@ -99,6 +96,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: #000;
+    
 }
 .ptb-90 {
     padding: 90px 0;
@@ -155,7 +153,6 @@ textarea {
     ** PreLoder **
 ===============================*/
 .about-me-preloder {
-    background-color: #FF1677 ; 
     height: 100%;
     width: 100%;
     top: 0;
@@ -163,12 +160,7 @@ textarea {
     position: fixed;
     z-index: 9999;
  }
- .homeTwo .about-me-preloder {
-    background: #548DF8;
- }
- .homeThree .about-me-preloder {
-    background: #37A000;
- }
+ 
 .about-me-preloder .spinner {
     position: absolute;
     top: 50%;
@@ -184,13 +176,6 @@ textarea {
   -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
   animation: sk-rotateplane 1.2s infinite ease-in-out;
   border-radius: 50px;
-}
-.homeTwo .spinner {
-    background-color: #fff;
-    border-radius: 0;
-}
-.homeThree .spinner {
-    background-color: #fff;
 }
 @-webkit-keyframes sk-rotateplane {
   0% { -webkit-transform: perspective(120px) }
@@ -211,102 +196,6 @@ textarea {
   }
 }
 
-/*******************************
-   *** homeTwo & homeThree css***
-*******************************/
-.hero-text h3 {
-    margin-top: 40px;
-    font-weight: 700;
-}
-.homeTwo .hero-text h1 {
-    font-size: 55px;
-}
-.homeThree .header-navbar-area {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9;
-}
-.homeThree .header-navbar-area {
-    background: transparent !important;
-}
-.slider-bg-2 {background-image: url(img/slider/jess.jpg);}
-.slider-bg-3 {background-image: url(img/slider/ballsHawaii.jpg);}
-.slider-bg-4 {background-image: url(img/slider/chihuly.jpg);}
-.slider-bg-5 {background-image: url(img/slider/boysPH.jpg);}
-.hero-slide-wrap {
-    display: table;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    height: 100vh;
-}
-.hero-slide-tablecell {
-    vertical-align: middle;
-    display: table-cell;
-}
-.slider-bg {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #ddd;
-    position: relative;
-    z-index: 2;
-}
-.slider-bg:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #000;
-    opacity: .4;
-    content: "";
-    z-index: -1;
-}
-.slider-text .cd-headline {
-    font-size: 28px; 
-    text-transform: uppercase;
-} 
-.slider-text h1 {
-    font-size: 65px;
-    font-weight: 700;
-    margin: 20px 0;
-    text-transform: capitalize;
-}
-.slider-text h1 span {
-    background: #548DF8;
-    padding: 0 20px;
-}
-.hero-slider-area-active {
-  overflow: hidden;
-}
-.hero-slider-area-active .owl-dots div {
-    height: 20px;
-    width: 20px;
-    border: 2px solid #fff;
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-    display: inline-block;
-    margin: 0 10px;
-}
-.hero-slider-area-active .owl-dots {
-    position: absolute;
-    bottom: 10px;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-}
-.hero-slider-area-active .owl-dots div.active {
-    background: #FF1677;
-    border-color: #FF1677;
-}
-.homeThree .hero-slider-area-active .owl-dots div.active {
-    background: #37A000;
-    border-color: #37A000;
-}
 
 /*************************
 04. Skill
@@ -342,17 +231,10 @@ textarea {
     margin-top: -26px;
     padding: 0 5px;
 }
-.homeTwo .skill .progress-bar span {
-    background-color: #548DF8;
-}
-.homeThree .skill .progress-bar span {
-    background-color: #37A000;
-}
 /*==============================
     03. Header-slider Area css
 ===============================*/
 .hero-slide-bg {
-    background-image: url(img/slider/slider-bg.jpeg);
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -367,9 +249,9 @@ textarea {
     left: 0;
     height: 100%;
     width: 100%;
-    background: -webkit-linear-gradient(330deg, #FF1677 0%, #8fd3f4 100%);
-    background: -o-linear-gradient(330deg, #FF1677 0%, #8fd3f4 100%);
-    background: linear-gradient(120deg, #FF1677 0%, #8fd3f4 100%);
+    background: -webkit-linear-gradient(330deg, purple 0%, plum 100%);
+    background: -o-linear-gradient(330deg, purple 0%, plum 100%);
+    background: linear-gradient(120deg, purple 0%, plum 100%);
     content: "";
     z-index: -1;
     opacity: .8;
@@ -385,20 +267,15 @@ textarea {
 }
 .hero-slide-info img {
     border-radius: 50%;
-    border: 10px solid #FF1677;
+    border: 10px solid purple;
     height: 170px;
     width: 170px;
 }
 .hero-text {color: #fff;}
 .cd-words-wrapper {
-    color: #FF1677;
+    color: purple;
 }
-.homeTwo .cd-words-wrapper {
-    color: #548DF8;
-}
-.homeThree .cd-words-wrapper {
-    color: #37A000;
-}
+
 .cd-words-wrapper b i {
     border-radius: 50%;
     border: 10px solid #ddd;
@@ -413,7 +290,7 @@ textarea {
     font-weight: 400;
 }
 .hero-text h1 strong {
-    color: #FF1677;
+    color: purple;
 }
 .hero-text .cd-headline {
     text-align: center;
@@ -472,19 +349,13 @@ textarea {
     05. header-navbar-area css
 ===============================*/
 .header-navbar-area, #sticker-mobile {
-    background: #FF1677 !important;
+    background: purple !important;
 }
-.homeTwo .header-navbar-area, 
-.homeTwo #sticker-mobile {
-    background: #548DF8 !important;
-} 
-.homeThree #sticker-mobile {
-    background: #37A000 !important;
-}
+
 .header-navbar-area .header-top.stick, 
 #sticker-mobile.header-top.stick {
     position: fixed;
-    background: #FF1677;
+    background: purple;
     top: 0;
     left: 0;
     width: 100%;
@@ -492,14 +363,6 @@ textarea {
     -webkit-transition: .9s;
     -o-transition: .9s;
     transition: .9s;
-}
-.homeTwo .header-navbar-area .header-top.stick, 
-.homeTwo #sticker-mobile.header-top.stick {
-    background: #548DF8 !important;
-}
-.homeThree .header-navbar-area .header-top.stick, 
-.homeThree #sticker-mobile.header-top.stick {
-    background: #37A000 !important;
 }
 .logo {
     margin: 14px 0 0;
@@ -530,18 +393,7 @@ textarea {
 .menu-navbar ul li.active a {
     color: #ffc800;
 }
-.homeTwo .menu-navbar ul li.active a {
-    color: #85ff00;
-}
-.homeTwo .menu-navbar ul li a:hover {
-    color: #85ff00;
-}
-.homeThree .menu-navbar ul li.active a {
-    color: #fbff03;
-}
-.homeThree .menu-navbar ul li a:hover {
-    color: #fbff03;
-}
+.
 .menu-navbar ul li:last-child a {
     padding-right: 0;
 }
@@ -550,23 +402,14 @@ textarea {
     06. about-us css
 ===============================*/
 .about-me-area {
-    -webkit-box-shadow: 0 2px 5px -2px rgba(255,22,119,.5);
-            box-shadow: 0 2px 5px -2px rgba(255,22,119,.5);
+    -webkit-box-shadow: 0 2px 5px -2px purple;
+            box-shadow: 0 2px 5px -2px purple;
 }
-.homeTwo .about-me-area {
-    -webkit-box-shadow: 0 2px 5px -2px rgba(84,141,248,.5);
-            box-shadow: 0 2px 5px -2px rgba(84,141,248,.5);
-}
-.homeThree .about-me-area {
-    -webkit-box-shadow: 0 2px 5px -2px rgba(55, 160, 0,.5);
-            box-shadow: 0 2px 5px -2px rgba(55, 160, 0,.5);
-}
+
 .about-me-all-info {
-    background: #FF1677;
+    background: black;
 }
-.homeTwo .about-me-all-info {
-    background: #548DF8;
-}
+
 .about-me-img {
     padding: 40px;
 }
@@ -588,58 +431,28 @@ textarea {
     margin-top: 40px;
     max-height: 230px;
 }
-.homeThree .about-me {
-    padding-left: 0;
-}
+
 .resume-btn {
     text-transform: uppercase;
     padding: 12px 20px;
     display: inline-block;
-    -webkit-box-shadow: 0 0 8px rgba(255,22,119,.5);
-            box-shadow: 0 0 8px rgba(255,22,119,.5);
+    -webkit-box-shadow: 0 0 8px purple;
+            box-shadow: 0 0 8px purple;
     margin-top: 22px;
     font-weight: 700;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
-    color: #FF1677;
+    color: purple;
 }
-.home-Two .resume-btn {
-    -webkit-box-shadow: 0 0 8px rgba(84,141,248,.5);
-            box-shadow: 0 0 8px rgba(84,141,248,.5);
-    border-radius: 50px;
-}
-.homeThree .resume-btn {
-    -webkit-box-shadow: 0 0 8px rgba(55, 160, 0,.5);
-            box-shadow: 0 0 8px rgba(55, 160, 0,.5);
-    border-radius: 10px;
-}
-.homeTwo .resume-btn, 
-.homeTwo .resume-print .resume-btn {
-    color: #548DF8;
-    border-radius: 50px;
-    -webkit-box-shadow: 0 0 8px rgba(84,141,248, .5);
-            box-shadow: 0 0 8px rgba(84,141,248, .5);
-}
-.homeThree .resume-btn, 
-.homeThree .resume-print .resume-btn {
-    color: #37A000;
-    border-radius: 10px;
-}
+
 .resume-btn:hover {
     background: #FF1677;
     color: #fff;
     -webkit-box-shadow: none;
             box-shadow: none;
 }
-.homeTwo .resume-btn:hover, 
-.homeTwo .resume-print .resume-btn:hover {
-    background: #548DF8;
-}
-.homeThree .resume-btn:hover, 
-.homeThree .resume-print .resume-btn:hover {
-    background: #37A000;
-}
+
 .about-personal-info li {
     width: 40%;
     line-height: 38px;
@@ -649,23 +462,15 @@ textarea {
 }
 .about-personal-info {
     -webkit-box-shadow: 0 0 20px 0 #ddd;
-    box-shadow: 0 0 8px rgba(255,22,119,.5);
+    box-shadow: 0 0 8px purple;
     padding: 38px 30px;
     margin-top: 40px;
     max-height: 230px;
     overflow: hidden;
 }
-.homeTwo .about-personal-info {
-    -webkit-box-shadow: 0 0 20px 0 #ddd;
-    box-shadow: 0 0 8px rgba(84,141,248,.5);
-}
 .about-myself {
-    -webkit-box-shadow: 0 0 8px rgba(255,22,119,.5);
-            box-shadow: 0 0 8px rgba(255,22,119,.5);
-}
-.homeTwo .about-myself {
-    -webkit-box-shadow: 0 0 8px rgba(84,141,248,.5);
-            box-shadow: 0 0 8px rgba(84,141,248,.5);
+    -webkit-box-shadow: 0 0 8px purple;
+            box-shadow: 0 0 8px purple;
 }
 .about-me-area .social-links a {
     display: block;
@@ -678,19 +483,14 @@ textarea {
     float: right;
     margin-right: 40px;
     padding: 0 5px;
-    background: #FF1677;
-    border: 2px solid #FF1677;
+    background: purple;
+    border: 2px solid purple;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
 }
 .about-me-area .social-links a:hover:after {
-    border: 2px solid #fff;
-}
-.homeTwo .about-me-area .social-links {
-    background: #548DF8;
-    border: 2px solid #548DF8;
-}
+    border: 2px solid #fff;}
 
 /*==============================
     07. Section-Title css
@@ -705,7 +505,7 @@ textarea {
     position: absolute;
     top: -8px;
     left: 50%;
-    border: 2px solid #FF1677;
+    border: 2px solid purple;
     height: 20px;
     width: 20px;
     content: "";
@@ -718,7 +518,7 @@ textarea {
     position: absolute;
     top: -8px;
     left: 50%;
-    border: 2px solid #FF1677;
+    border: 2px solid purple;
     height: 20px;
     width: 20px;
     content: "";
@@ -732,7 +532,7 @@ textarea {
     top: 0px;
     left: 45%;
     content: "";
-    background: #FF1677;
+    background: purple;
     height: 2px;
     width: 4%;
 }
@@ -741,33 +541,9 @@ textarea {
     top: 0px;
     right: 44%;
     content: "";
-    background: #FF1677;
+    background: purple;
     height: 2px;
     width: 4%;
-}
-.homeTwo .poly-shape:after {
-    border: 2px solid #548DF8;
-}
-.homeTwo .poly-shape:before {
-    border: 2px solid #548DF8;
-}
-.homeTwo .l-shape:before {
-    background: #548DF8;
-}
-.homeTwo .l-shape:after {
-    background: #548DF8
-}
-.homeThree .poly-shape:after {
-    border: 2px solid #37A000;
-}
-.homeThree .poly-shape:before {
-    border: 2px solid #37A000;
-}
-.homeThree .l-shape:before {
-    background: #37A000;
-}
-.homeThree .l-shape:after {
-    background: #37A000;
 }
 /*==============================
     08. Skill css
@@ -776,8 +552,8 @@ textarea {
 
 ===============================*/
 .all-skill-area {
-    -webkit-box-shadow: 0 2px 5px -2px rgba(255,22,119,.5);
-            box-shadow: 0 2px 5px -2px rgba(255,22,119,.5);
+    -webkit-box-shadow: 0 2px 5px -2px plum;
+            box-shadow: 0 2px 5px -2px plum;
 }
 .homeTwo .all-skill-area {
     -webkit-box-shadow: 0 2px 5px -2px rgba(84,141,248,.7);
@@ -791,9 +567,6 @@ textarea {
     text-transform: capitalize;
     position: relative;
     display: inline-block;
-}
-.homeThree .section-title h1 {
-    color: #37A000;
 }
 .professonal-skill h3 {
     margin: 0 0 30px;
@@ -825,16 +598,10 @@ textarea {
     text-transform: uppercase;
 }
 .progress .progress-bar {
-    background: #FF1677;
+    background: purple;
     border-radius: 50px;
     -webkit-box-shadow: none;
             box-shadow: none;
-}
-.homeTwo .progress .progress-bar {
-    background: #548DF8;
-}
-.homeThree .progress .progress-bar {
-    background: #37A000;
 }
 .professonal-skill span {
     margin: 2px 30px;
@@ -845,18 +612,14 @@ textarea {
     background: #fff;
     padding: 10px 21px;
     margin: 0 5px;
-    color: #FF1677;
+    color: purple;
     margin-top: 50px;
-    -webkit-box-shadow: 0 0 8px rgba(255,22,119,.5);
-            box-shadow: 0 0 8px rgba(255,22,119,.5);
+    -webkit-box-shadow: 0 0 8px purple;
+            box-shadow: 0 0 8px purple;
     font-weight: 700;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
-}
-.homeTwo .resume-print .resume-btn {
-    -webkit-box-shadow: 0 0 8px rgba(84,141,248,.5);
-            box-shadow: 0 0 8px rgba(84,141,248,.5);
 }
 .resume-print .resume-btn:hover {
     background: #FF1677;
@@ -864,47 +627,6 @@ textarea {
 }
 .resume-print i {
     margin-left: 16px;
-}
-/*=====================
-    language circle progress bar
-======================*/
-.progressbar {
-    display: inline-block;
-    width: 23%;
-    border-radius: 50%;
-    text-align: center;
-    margin-right: 1px;
-}
-.progressbar h4 {
-    margin: 15px 0 0px;
-}
-.progressbar.language {
-    width: 32.5%;
-}
-.progressbar:last-child {
-    margin-right: 0;
-}
-.circle {
-    width: 140px;
-    height: 140px;
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-}
-.circle canvas {
-    vertical-align: middle;
-    border-radius: 50%;
-}
-.circle div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -16px 0 0 -66px;
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
 }
 
 /*==============================
