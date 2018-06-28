@@ -313,13 +313,12 @@ textarea {
 .social-links {
     display: inline-block;
 }
-.social-links a {
-    position: relative;
-    padding: 0 20px;
+.img{
+    height: 24px;
+    width: 24px;
 }
 .social-links a:after {
     padding: 0 20px;
-    height: 40px;
     border: 2px solid #fff;
     top: -10px;
     left: 0;
