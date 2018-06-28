@@ -82,30 +82,7 @@
   ====================*/
   $('body').scrollspy({ target: '.navbar-collapse', offset: 95 })
 
-  /*===================
-      testimonial js
-  =======================*/
-  $('.active-testimonial-carousel').owlCarousel({
-    items: 1,
-    nav: false,
-    dots: false,
-    pagination: true,
-    loop: true,
-    slideSpeed: 300,
-    paginationSpeed: 400,
-    singleItem: true,
-    afterInit: makePages,
-    afterUpdate: makePages
-  });
-  function makePages() {
-    $.each(this.owl.userItems, function (i) {
-      $('.owl-controls .owl-page').eq(i)
-        .css({
-          'background': 'url(' + $(this).find('img').attr('src') + ')',
-          'background-size': 'cover'
-        })
-    });
-  }
+ 
 
   /*===================
       progressbar js
@@ -180,19 +157,7 @@
     }
   });
 
-  /*===================
-      google map js
-  =======================*/
-  $('.map')
-    .gmap3({
-      center: [40.740, -74.18],
-      zoom: 12,
-      scrollwheel: false,
-    })
-    .groundoverlay(
-      "http://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg",
-      { north: 40.773941, south: 40.712216, east: -74.12544, west: -74.22655 },
-  );
+
 
   /*===================
       scrollUp js
