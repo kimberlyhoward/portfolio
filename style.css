@@ -1027,49 +1027,7 @@ textarea {
 /*==============================
     14. Contact css
 ===============================*/
-.g-map {
-    margin: 0 0 50px;
-}
-.contact-form input, textarea {
-    width: 100%;
-    margin: 0 0 30px;
-    padding: 10px;
-    color: purple;
-    background-color: #c1c1c1;
-}
-.contact-form input[type="submit"] {
-    padding: 10px 38px;
-    display: inline-block;
-    margin: 25px 0 0;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s;
-}
-.contact-form input[type="submit"]:hover {
-    background: purple;
-    color: #fff;
-}
-.contact-form input::-webkit-input-placeholder, 
-.contact-form textarea::-webkit-input-placeholder {
-    color: purple;
-}
-.contact-form input:-ms-input-placeholder, 
-.contact-form textarea:-ms-input-placeholder {
-    color: purple;
-}
-.contact-form input::-ms-input-placeholder, 
-.contact-form textarea::-ms-input-placeholder {
-    color: purple;
-}
-.contact-form input::placeholder, 
-.contact-form textarea::placeholder {
-    color: purple;
-}
-.contact-form input:focus, 
-.contact-form textarea:focus {
-    outline: 1px solid purple;
-    border-color: purple;
-}
+
 .contact-form textarea {
     height: 200px;
     margin: 0;
@@ -1079,6 +1037,9 @@ textarea {
     border: 1px solid #ddd;
     padding: 12px;
     margin: 30px 0 0;
+    color: purple;
+    text-align: center;
+    font-size: 25px;
 }
 .contact-address-info span {
     width: 30px;
