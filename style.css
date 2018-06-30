@@ -85,7 +85,7 @@ h5,
 h6 {
     font-weight: 700;
     margin: 0 0 10px;
-    color:rgb(54, 5, 87);
+    color:purple;
     font-size: 40 px;
 }
 p {
@@ -313,9 +313,9 @@ textarea {
 .social-links {
     display: inline-block;
 }
-.img{
-    height: 24px;
-    width: 24px;
+.social-links img{
+    height: 50px;
+    width: 50px;
 }
 .social-links a:after {
     padding: 0 20px;
